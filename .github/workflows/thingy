@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@TheBlueJayMaster — Automotive Cinematic Video Production</title>
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; background: #0b0b0b; color: white; }
+    
+    /* Header */
+    header { padding: 100px 20px; text-align: center; background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; }
+    header h1 { font-size: 40px; margin-bottom: 10px; text-shadow: 0 0 15px black; }
+    header p { font-size: 18px; text-shadow: 0 0 10px black; }
+    @media (min-width: 768px) {
+      header h1 { font-size: 56px; }
+      header p { font-size: 22px; }
+    }
+
+    /* Sections */
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    h2 { font-size: 30px; margin-bottom: 20px; text-align: center; }
+
+    /* Packages */
+    .packages { display: grid; gap: 20px; grid-template-columns: 1fr; }
+    @media (min-width: 768px) { .packages { grid-template-columns: repeat(3, 1fr); } }
+    .card { background: #141414; padding: 25px; border-radius: 14px; border: 1px solid #2a2a2a; transition: transform 0.3s; }
+    .card:hover { transform: translateY(-6px); }
+    .card h3 { margin-top: 0; font-size: 22px; }
+
+    /* Buttons */
+    .btn { display: inline-block; padding: 14px 26px; background: #e00034; color: white; border-radius: 8px; text-decoration: none; font-size: 16px; transition: opacity 0.3s; }
+    .btn:hover { opacity: 0.8; }
+    .button-row { text-align: center; margin-top: 30px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+    /* Gallery */
+    .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 30px; }
+    @media (min-width: 768px) { .gallery { grid-template-columns: repeat(4, 1fr); } }
+    .gallery img { width: 100%; border-radius: 10px; opacity: 0.9; transition: opacity 0.3s, transform 0.3s; }
+    .gallery img:hover { opacity: 1; transform: scale(1.03); }
+
+    /* Footer */
+    footer { text-align: center; padding: 40px; background: #111; margin-top: 60px; font-size: 14px; }
+
+    /* Animations */
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>@TheBlueJayMaster</h1>
+    <p>Automotive Cinematic Video Production — Cars & Motorbikes</p>
+    <div class="button-row">
+      <a class="btn" href="#contact">Book a Shoot</a>
+      <a class="btn" href="#portfolio" style="background:#444;">View Samples</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>I create professional, cinematic automotive videos for car and motorbike owners in Singapore. Perfect for new car day, personal keepsakes, or a final video before selling or scrapping. You receive a high-quality final video, personal copy, and optional Instagram upload with collaboration.</p>
+  </section>
+
+  <section>
+    <h2>Packages</h2>
+    <div class="packages">
+      <div class="card">
+        <h3>$150 — Basic Cinematic Video</h3>
+        <p>• Smooth cinematic shots<br>• High-quality editing<br>• 1 location</p>
+      </div>
+      <div class="card">
+        <h3>$200 — Speedramp Edit</h3>
+        <p>• Dynamic speed ramps<br>• More advanced editing<br>• 1 location</p>
+      </div>
+      <div class="card">
+        <h3>$250 — Cinematic Storyline</h3>
+        <p>• Story-driven concept<br>• Premium pacing & visuals<br>• 2 locations</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Add-Ons</h2>
+    <p style="text-align:center;">• Extra location<br>• Rolling shots<br>• Multiple versions / songs</p>
+  </section>
+
+  <section>
+    <h2>Portfolio</h2>
+    <div id="portfolio" class="gallery">
+      <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" />
+      <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80" />
+      <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80" />
+      <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90f5?auto=format&fit=crop&w=800&q=80" />
+    </div>
+  </section>
+
+  <section>
+    <h2>How It Works</h2>
+    <p style="text-align:center;">1. DM to discuss your idea<br>2. Choose your package<br>3. Confirm schedule & location<br>4. Shoot day<br>5. Final video delivered<br>6. Optional IG collaboration</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">Slots are limited — feel free to ask for sample videos too!</p>
+    <div class="button-row">
+      <a class="btn" href="https://instagram.com/TheBlueJayMaster" target="_blank">Instagram</a>
+      <a class="btn" href="https://www.tiktok.com/" target="_blank" style="background:#444;">TikTok</a>
+    </div>
+  </section>
+
+  <footer>
+    @TheBlueJayMaster — Automotive Cinematic Video Production (Singapore)<br>
+    High-quality videos for cars & motorbikes | From $150
+  </footer>
+</body>
+</html>
